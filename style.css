@@ -68,7 +68,7 @@ nav::after {
 }
 .hero {
     height: 1000px;
-    background: url('images and videos/asafrwa.jpg') no-repeat center center/cover;
+    background: url('asafrwa.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +176,7 @@ p {
     font-size: 1.1em;
 }
 .about-hero {
-    background: url('images and videos/https___hypebeast.com_wp-content_blogs.dir_6_files_2020_07_rastah-pakistani-streetwear-brand-lookbook-sustainability-.jpg') no-repeat center center/cover; 
+    background: url('https___hypebeast.com_wp-content_blogs.dir_6_files_2020_07_rastah-pakistani-streetwear-brand-lookbook-sustainability-.jpg') no-repeat center center/cover; 
     display: flex;
     height: 1000px;
     flex-direction: column;
