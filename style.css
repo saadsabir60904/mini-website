@@ -1,0 +1,288 @@
+body {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0c0c0c;
+    color: #111;
+}
+body.fade-in {
+    opacity: 1;
+}
+nav {
+    background: #111;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d4af37;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease;
+}
+.logo a:hover {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #d4af37;
+    color: #111;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+nav::after {
+    content: "";
+}
+.hero {
+    height: 1000px;
+    background: url('images and videos/asafrwa.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(2331, 177, 28);
+    position: relative;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5); 
+    z-index: 1;
+}
+.hero h1,
+.hero p,
+.hero h2,
+.hero .btn {
+    position: relative;
+    z-index: 2; 
+}
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+.hero p {
+    color: white;
+    font-size: 40px;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif
+}
+.hero h2{
+    margin-top: 40px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    color: rgb(255, 255, 255);
+}
+.btn {
+    background: rgb(2331, 177, 28);
+    color: #0e0d0d;
+    padding: 15px 38px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s all ease;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif
+}
+.btn:hover {
+    background: #f8f6f6;
+    transform: translateY(-5px);
+}
+.btn-wrapper {
+    position: relative;
+    display: inline-block;
+    
+}
+ 
+.btn-bg {
+    width: 220px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 50px;
+}
+.product-card {
+    background: #0a0a0a;
+    border: 1px solid #070707;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-35px);
+    background-color: rgb(2331, 177, 28);
+}
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+.product-card h3 {
+    margin: 15px 0 10px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+}
+.price {
+    color: #f7f4f4;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.about-hero {
+    background: url('images and videos/https___hypebeast.com_wp-content_blogs.dir_6_files_2020_07_rastah-pakistani-streetwear-brand-lookbook-sustainability-.jpg') no-repeat center center/cover; 
+    display: flex;
+    height: 1000px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+.about-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.about-hero h1,
+.about-hero p {
+    position: relative;
+    z-index: 2; 
+}
+
+.about-team img {
+    display: block;
+    margin: 50px auto;    
+}
+.about {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+.about-hero h1 {
+    color: rgb(231, 177, 28);
+    font-size: 60px;
+}
+.about-hero p{
+    font-size: 25px;
+}
+
+.about-cta h2 {
+    margin-bottom: 20px;
+}
+
+.about-cta .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #d4af37;
+    color: #111;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.about-cta .btn:hover {
+    background: #fff;
+    color: #111;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    background: #fff;
+    border-radius: 8px;
+}
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background: #d4af37;
+    border: none;
+    padding: 12px 20px;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-form button:hover {
+    background: #bfa433;
+}
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+footer a {
+    color: #d4af37;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
